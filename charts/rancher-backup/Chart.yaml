@@ -1,0 +1,26 @@
+annotations:
+  catalog.cattle.io/auto-install: rancher-backup-crd=match
+  catalog.cattle.io/certified: rancher
+  catalog.cattle.io/display-name: Cross Cluster Migration
+  catalog.cattle.io/kube-version: '>= 1.16.0-0'
+  catalog.cattle.io/namespace: cattle-resources-system
+  catalog.cattle.io/os: linux
+  catalog.cattle.io/permits-os: linux,windows
+  catalog.cattle.io/provides-gvr: resources.cattle.io.resourceset/v1
+  catalog.cattle.io/rancher-version: '>=2.6.0-0'
+  catalog.cattle.io/release-name: rancher-backup
+  catalog.cattle.io/scope: downstream
+  catalog.cattle.io/type: cluster-tool
+  catalog.cattle.io/ui-component: rancher-backup
+  catalog.cattle.io/upstream-version: 2.1.1-ent
+apiVersion: v2
+appVersion: 2.1.1-ent
+description: Provides ability to migrate resources(back up and restore) from one Kubernetes cluster to another
+icon: https://charts.rancher.io/assets/logos/backup-restore.svg
+keywords:
+- applications
+- infrastructure
+- migrations
+kubeVersion: '>= 1.16.0-0'
+name: cross-cluster-migration
+version: 2.1.1-ent
